@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
     --sand: #DCBCB4;
     --white: #F8F2EA;
@@ -8,12 +11,13 @@
     --pink: #E59C9F;
   } 
 
+
 #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
+  width: 100vw;
   background-color: var(--sand);
 }
 
@@ -28,13 +32,13 @@ body {
 
 .welcome {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  /* padding: 2rem;
+  margin: 0 auto; */
+  /* max-width: 1280px; */
 }
 
 .maindiv {
@@ -43,9 +47,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  /* padding: 2rem;
+  margin: 0 auto; */
+  min-height: 100vh;
+  /* max-width: 1280px; */
 }
 
 nav {
@@ -53,10 +60,10 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 1280px;
+  /* text-align: center; */
+  /* padding: 2rem;
+  margin: 0 auto; */
+  /* max-width: 1280px; */
 }
 
 ul {
@@ -65,10 +72,11 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 1280px;
-  list-style-type: none
+  /* padding: 2rem; */
+  /* margin: 0 auto; */
+  /* max-width: 1280px; */
+  list-style-type: none;
+  gap: 6rem;
 }
 
 a {
@@ -81,5 +89,38 @@ a {
   margin: 0 auto;
   max-width: 1280px;
   text-decoration: none;
-  color: var(--blue);
+  color: var(--black);
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--black);
+  text-transform: uppercase; 
+}
+
+footer {
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  z-index: 100; 
+}
+
+h1 {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+
+p {
+  color: var(--black);
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--black);
+  text-transform: uppercase; 
 }

@@ -2,7 +2,7 @@
 function MainArticle() {
     return (
         <div className="maindiv">
-            <h1>Yo</h1>
+            <h1>Opening in April! See you soon</h1>
         </div>
     );
 }

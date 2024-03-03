@@ -2,8 +2,9 @@ function Nav() {
     return (
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/">Manifesto</a></li>
+                <li><a href="/about">Lookbook</a></li>
+                <li><a href="/contact">Shop</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
