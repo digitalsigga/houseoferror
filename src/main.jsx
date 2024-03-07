@@ -1,16 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import Nav from './Nav.jsx'
-import Footer from './Footer.jsx'
-import MainArticle from './MainArticle.jsx'
-import Welcome from './Welcome.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import Nav from './Nav.jsx';
+import Footer from './Footer.jsx';
+import MainArticle from './MainArticle.jsx';
+import Welcome from './Welcome.jsx';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-      <Welcome/>
-      <Nav/>
-      <MainArticle/>
-      <Footer/>
-  </React.StrictMode>,
-)
+    <Welcome />
+    <Nav />
+    <MainArticle />
+    <Footer />
+  </React.StrictMode>
+);
