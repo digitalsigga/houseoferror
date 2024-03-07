@@ -4,7 +4,7 @@ import './index.css'
 import Nav from './Nav.jsx'
 import Footer from './Footer.jsx'
 import MainArticle from './MainArticle.jsx'
-import Welcome from './welcome.jsx'
+import Welcome from './Welcome.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
