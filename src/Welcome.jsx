@@ -1,5 +1,5 @@
 function Welcome() {
-  return <h1>Hello, World!</h1>;
+  return <h1>House of Error!</h1>;
 }
 
 export default Welcome;

@@ -51,7 +51,7 @@ body {
   padding: 0;
   /* padding: 2rem;
   margin: 0 auto; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* max-width: 1280px; */
 }
 
@@ -64,6 +64,12 @@ nav {
   /* padding: 2rem;
   margin: 0 auto; */
   /* max-width: 1280px; */
+  color: var(--black);
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--black);
+  text-transform: uppercase; 
 }
 
 ul {
@@ -116,11 +122,19 @@ h1 {
 }
 
 
-p {
+h2 {
   color: var(--black);
   font-family: Helvetica;
   font-size: 1.2rem;
   font-weight: 200;
   color: var(--black);
   text-transform: uppercase; 
+}
+
+p {
+  color: var(--black);
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--black);
 }
