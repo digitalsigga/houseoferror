@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
+@font-face {
+  font-family: 'Rafael';
+  src: local('Rafael'),  url('../../public/fonts/rafael_display-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   font-family: Helvetica, sans-serif;
   font-weight: 400;
@@ -30,15 +37,13 @@ body {
   color: var(--blue);
 }
 
-.welcome {
+.rafael-font {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  /* padding: 2rem;
-  margin: 0 auto; */
-  /* max-width: 1280px; */
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Rafael', sans-serif;
+  font-size:150px;
+  color: var(--black);
 }
 
 .maindiv {

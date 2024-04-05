@@ -1,5 +1,9 @@
 function Welcome() {
-  return <h1>House of Error!</h1>;
+  return (
+    <div className="rafael-font">
+      House of Error
+    </div>
+  );
 }
 
 export default Welcome;
