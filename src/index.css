@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Rafael';
-  src: local('Rafael'),  url('../../public/fonts/rafael_display-webfont.woff') format('woff');
+  src: local('Rafael'),  url('/fonts/rafael_display-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
