@@ -41,18 +41,18 @@ body::before {
   height: 100%; /* Full height */
   background: radial-gradient(circle at center, var(--sand), var(--white), var(--pink), var(--yellow), var(--orange), var(--sand));
   background-size: 100% 100%;
-  animation: growCircle 20s ease-in-out infinite;
+  animation: growCircle 25s ease-in-out infinite;
   transform: translate(-50%, -50%); /* Center the element */
   z-index: -3;
 }
 
 @keyframes growCircle {
   0%, 100% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(2);
     background-size: 200% 100%;
   }
   50% {
-    transform: translate(-50%, -50%) scale(5);
+    transform: scale(7);
     background-size: 300% 200%;
   }
 }
@@ -88,6 +88,7 @@ body::before {
     text-align: center;
     list-style-type: none;
     max-width: 100%;
+    padding: 2rem;
 }
 
 .maindiv img {
@@ -97,8 +98,6 @@ body::before {
   height: auto; /* Allow the height to adjust proportionally */
   padding: 3rem; /* Add padding around the image */
 }
-
-
 
 nav, ul, a, footer {
     font-family: Helvetica, sans-serif;
@@ -127,28 +126,53 @@ footer {
 }
 
 h1, .activeLink {
-    font-size: 2.5rem;
+    font-size: 1,2rem;
 }
 
 h2, p {
-    font-size: 1.2rem;
+    font-size: 0,7rem;
 }
 
 @media (max-width: 768px) {
-    :root {
-        font-size: 14px; /* Slightly smaller base font size for smaller devices */
-    }
+  :root {
+      font-size: 14px; /* Slightly smaller base font size for smaller devices */
+  }
 
-    .rafael-font {
-        font-size: 4rem; /* Smaller for mobile */
-    }
+  .banner {
+      font-size: 5rem; /* Adjust banner font size for mobile */
+  }
 
-    nav, ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
+  .banner:hover {
+      font-size: 5rem; /* Maintain font size on hover */
+  }
 
-    a, .activeLink, h1, h2, p {
-        font-size: 1rem; /* Adjust font sizes for readability */
-    }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, var(--sand), var(--white), var(--pink), var(--yellow), var(--orange), var(--sand));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+
+  nav, ul {
+      flex-direction: row;
+      gap: 0rem; /* Adjust gap between items */
+      max-width: 100%; /* Ensure the navigation takes full width */
+   }
+
+  a, .activeLink, h1, h2, p {
+      font-size: 0,8rem; /* Adjust font sizes for readability */
+  }
+
+  .maindiv img {
+      max-width: 100%; /* Ensure images take full width on mobile */
+      height: auto; /* Allow the height to adjust proportionally */
+      padding: 1rem; /* Adjust padding around the image */
+  }
 }
