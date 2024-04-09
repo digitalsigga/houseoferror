@@ -15,7 +15,7 @@ export const useThreeScene = (mountRef, width, height) => {
         // GLTF Loader
         const loader = new GLTFLoader();
 
-        loader.load('public/gltf/sillyhat_.gltf', function (gltf) {
+        loader.load('/gltf/sillyhat_.gltf', function (gltf) {
             // Increase the size of the model
             gltf.scene.scale.set(10, 10, 10); // Adjust the scaling as needed
 
