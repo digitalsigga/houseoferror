@@ -133,6 +133,25 @@ h2, p {
     font-size: 0,7rem;
 }
 
+.scrollable-album {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px; /* Adjust the gap between images */
+  padding: 10px;
+}
+
+.scrollable-album::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollable-album::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.scrollable-album::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (max-width: 768px) {
   :root {
       font-size: 14px; /* Slightly smaller base font size for smaller devices */

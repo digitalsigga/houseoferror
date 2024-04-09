@@ -25,11 +25,6 @@ function Nav() {
                     Shop
                 </NavLink>
             </li>
-            <li>
-                <NavLink to="/contact" className={({ isActive }) => isActive ? "activeLink" : undefined}>
-                    Contact
-                </NavLink>
-            </li>
         </ul>
     </nav>
     );
