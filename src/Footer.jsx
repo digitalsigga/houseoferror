@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer>
-            <p>© 2024</p>
+            <p>Get in touch sigga@houseoferror.xyz</p>
         </footer>
     )
 }

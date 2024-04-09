@@ -1,5 +1,5 @@
 
-function MainArticle() {
+function Home() {
     return (
         <div className="maindiv">
             <h1>House of Error</h1>
@@ -7,7 +7,7 @@ function MainArticle() {
     );
 }
 
-export default MainArticle;
+export default Home;
 
 
                

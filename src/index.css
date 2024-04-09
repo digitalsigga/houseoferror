@@ -9,10 +9,12 @@
 }
 
 :root {
-    --sand: #f8f2ea;
+    --sand: #DCBDB4;
     --white: #F8F2EA;
     --blue: #002fa7;
-     --pink: #E59C9F;
+    --pink: #E59C9F;
+    --yellow: #FDDC90;
+    --orange: #E7A47F;
     font-family: Helvetica, sans-serif;
     font-size: 16px; /* Base font size */
     font-weight: 400;
@@ -24,9 +26,35 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--sand);
-    color: var(--blue);
+body, html {
+  height: 100%;
+  margin: 0;
+  position: relative; /* Establish positioning context for absolutely positioned elements */
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: radial-gradient(circle at center, var(--sand), var(--white), var(--pink), var(--yellow), var(--orange), var(--sand));
+  background-size: 100% 100%;
+  animation: growCircle 20s ease-in-out infinite;
+  transform: translate(-50%, -50%); /* Center the element */
+  z-index: -3;
+}
+
+@keyframes growCircle {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    background-size: 200% 100%;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(5);
+    background-size: 300% 200%;
+  }
 }
 
 #root {
@@ -37,7 +65,11 @@ body {
     width: 100%;
 }
 
-.rafael-font {
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: 'Rafael', sans-serif;
   font-size: 9.375rem; /* Responsive size, original was 150px */
   color: var(--blue);
@@ -49,17 +81,24 @@ body {
   color: var(--blue);
 }
 
-.rafael-font {
-    font-size: 9.375rem; /* 150px */
-}
-
 .maindiv, nav, ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     list-style-type: none;
+    max-width: 100%;
 }
+
+.maindiv img {
+  max-width: 80%; /* Adjust the percentage to make the image smaller */
+  max-height: 80vh; /* Adjust the maximum height as needed */
+  width: auto; /* Allow the width to adjust proportionally */
+  height: auto; /* Allow the height to adjust proportionally */
+  padding: 3rem; /* Add padding around the image */
+}
+
+
 
 nav, ul, a, footer {
     font-family: Helvetica, sans-serif;
@@ -80,8 +119,11 @@ a {
 }
 
 footer {
-    align-self: flex-end;
-    width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
 }
 
 h1, .activeLink {
