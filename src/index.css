@@ -116,7 +116,6 @@ nav, ul {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  box-shadow: 0 0 20px 10px var(--white);
   height: 100vh;
 }
 
@@ -146,13 +145,7 @@ a {
     padding: 1.25rem; /* 20px */
 }
 
-footer {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  padding: 2rem;
-  width: 100%;
-}
+
 
 h1, .activeLink {
     font-size: 2rem;

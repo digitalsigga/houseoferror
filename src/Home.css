@@ -1,0 +1,9 @@
+.maindiv {
+    text-align: center; /* Centering the content */
+}
+
+.feature-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    /* Add more styling as needed */
+}

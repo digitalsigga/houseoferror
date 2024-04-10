@@ -1,0 +1,71 @@
+:root {
+    --sand: #DCBDB4;
+    --white: #F8F2EA;
+    --blue: #002fa7;
+    --pink: #E59C9F;
+    --yellow: #FDDC90;
+    --orange: #E7A47F;
+}
+
+h1 {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 2rem; /* Example size, adjust as needed */
+    color: var(--blue);
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px; /* Base font size */
+    font-weight: 400;
+    color: var(--blue);
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    /* background-color: var(--orange); Change to the desired color */
+    color: var(--white); /* Text color */
+    padding: 20px;
+    width: 100%;
+}
+
+a {
+    color: var(--blue); /* Text color for links */
+    text-decoration: none; /* Remove default underline */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px; /* Adjust margin for spacing */
+    text-align: center; /* Center align content */
+}
+
+.footer-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.footer-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px; /* Add space below the heading */
+    padding: 0.5rem;
+}
+
+
+.footer-section a {
+    color: var(--blue); /* Text color for links */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .footer-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center align content */
+    }
+}

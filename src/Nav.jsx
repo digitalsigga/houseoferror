@@ -25,6 +25,11 @@ function Nav() {
                     Shop
                 </NavLink>
             </li>
+            <li>
+                    <a href="https://www.instagram.com/house.oferror/" target="_blank" rel="noopener noreferrer" className="instagramLink">
+                        Instagram
+                    </a>
+             </li>
         </ul>
     </nav>
     );
