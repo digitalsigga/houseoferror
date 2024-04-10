@@ -20,7 +20,7 @@ root.render(
     <CloudinaryContext cloudName="dvlggqgbf"> 
     <BrowserRouter>
       <Banner/>
-      <Nav />
+      <Nav/>
       <Routes>
         <Route path="/" element={<MainArticle />} />
         <Route path="/home" element={<Home />} />

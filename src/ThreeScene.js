@@ -26,7 +26,7 @@ export const useThreeScene = (mountRef, width, height) => {
         });
 
         // OrbitControls
-        const controls = new OrbitControls(camera, renderer.domElement);
+        // const controls = new OrbitControls(camera, renderer.domElement);
 
         camera.position.z = 5;
 

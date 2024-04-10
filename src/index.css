@@ -26,6 +26,14 @@
     box-sizing: border-box;
 }
 
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -39,7 +47,7 @@ body::before {
   left: 50%; /* Center horizontally */
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  background: radial-gradient(circle at center, var(--sand), var(--white), var(--pink), var(--yellow), var(--orange), var(--sand));
+  background: radial-gradient(circle at center, var(--sand), var(--white), var(--pink), var(--orange), var(--sand));
   background-size: 100% 100%;
   animation: growCircle 25s ease-in-out infinite;
   transform: translate(-50%, -50%); /* Center the element */
@@ -52,7 +60,7 @@ body::before {
     background-size: 200% 100%;
   }
   50% {
-    transform: scale(7);
+    transform: scale(6);
     background-size: 300% 200%;
   }
 }
@@ -65,19 +73,30 @@ body::before {
     width: 100%;
 }
 
-.banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.bannerfont {
   font-family: 'Rafael', sans-serif;
   font-size: 9.375rem; /* Responsive size, original was 150px */
   color: var(--blue);
 }
 
+.navigation-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: transparent important!;
+}
+
+.banner {
+  box-shadow: 0 0 20px 10px var(--white);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .activeLink, h1 {
   font-family: "Reenie Beanie", cursive;
-  font-size: 2.5rem; /* Example size, adjust as needed */
+  font-size: 2rem; /* Example size, adjust as needed */
   color: var(--blue);
 }
 
@@ -88,8 +107,8 @@ body::before {
     text-align: center;
     list-style-type: none;
     max-width: 100%;
-    padding: 2rem;
-}
+    padding: 0.3rem;
+  }
 
 .maindiv img {
   max-width: 80%; /* Adjust the percentage to make the image smaller */
@@ -157,7 +176,7 @@ h2, p {
       font-size: 14px; /* Slightly smaller base font size for smaller devices */
   }
 
-  .banner {
+  .bannerfont {
       font-size: 5rem; /* Adjust banner font size for mobile */
   }
 

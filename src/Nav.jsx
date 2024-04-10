@@ -20,11 +20,11 @@ function Nav() {
                     Lookbook / AR
                 </NavLink>
             </li>
-            <li>
+            {/* <li>
                 <NavLink to="/shop" className={({ isActive }) => isActive ? "activeLink" : undefined}>
                     Shop
                 </NavLink>
-            </li>
+            </li> */}
         </ul>
     </nav>
     );
