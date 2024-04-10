@@ -47,21 +47,43 @@ const Shop = () => {
             "product": {
               "styles": {
                 "button": {
-                  "background-color": "#002fa7", // Ensure the button is blue
-                  "font-family": "Helvetica Neue, sans-serif",
+                  "background-color": "#002fa7", // Button color
                   ":hover": {
-                    "background-color": "#002fa7"
+                    "background-color": "#0050ff" // Lighter blue on hover
                   },
                   ":focus": {
-                    "background-color": "#002fa7"
+                    "background-color": "#0050ff" // Lighter blue on focus
                   },
-                  "border-radius": "7px",
-                  "padding-left": "35px",
-                  "padding-right": "35px"
                 }
               },
               "text": {
                 "button": "Add to cart"
+              }
+            },
+            "cart": {
+              "styles": {
+                "button": {
+                  "background-color": "#002fa7",
+                  ":hover": {
+                    "background-color": "#0050ff"
+                  },
+                  ":focus": {
+                    "background-color": "#0050ff"
+                  }
+                }
+              }
+            },
+            "toggle": {
+              "styles": {
+                "toggle": {
+                  "background-color": "#002fa7",
+                  ":hover": {
+                    "background-color": "#0050ff"
+                  },
+                  ":focus": {
+                    "background-color": "#0050ff"
+                  }
+                }
               }
             }
           }
