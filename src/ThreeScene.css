@@ -1,0 +1,24 @@
+    /* ThreeScene.css */
+
+    /* Set the size of the container */
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Style the canvas element */
+    .canvas {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Add some background color to the scene */
+    .scene {
+        background-color: #f2f2f2;
+    }
+
+    /* Style the objects in the scene */
+    .object {
+        color: #ff0000;
+        /* Add more styles as needed */
+    }

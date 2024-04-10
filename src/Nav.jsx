@@ -7,24 +7,24 @@ function Nav() {
         <ul>
             <li>
                 <NavLink to="/" className={({ isActive }) => isActive ? "activeLink" : undefined}>
-                    Home
+                    Highlights
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/editorial" className={({ isActive }) => isActive ? "activeLink" : undefined}>
-                    Editorial
+                <NavLink to="/waningmoon" className={({ isActive }) => isActive ? "activeLink" : undefined}>
+                    Waning Moon
                 </NavLink>
             </li>
             <li>
                 <NavLink to="/lookbook" className={({ isActive }) => isActive ? "activeLink" : undefined}>
-                    Lookbook / AR
+                    Lookbook
                 </NavLink>
             </li>
-            {/* <li>
+            <li>
                 <NavLink to="/shop" className={({ isActive }) => isActive ? "activeLink" : undefined}>
                     Shop
                 </NavLink>
-            </li> */}
+            </li>
         </ul>
     </nav>
     );

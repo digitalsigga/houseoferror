@@ -7,7 +7,7 @@ import Nav from './Nav.jsx';
 import Footer from './Footer.jsx';
 import MainArticle from './Home.jsx';
 import Banner from './Banner.jsx';
-import Editorial from './Editorial.jsx';
+import WaningMoon from './WaningMoon.jsx';
 import Lookbook from './Lookbook.jsx';
 import Contact from './Contact.jsx';
 import Shop from './Shop.jsx';
@@ -24,7 +24,7 @@ root.render(
       <Routes>
         <Route path="/" element={<MainArticle />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/editorial" element={<Editorial />} />
+        <Route path="/waningmoon" element={<WaningMoon />} />
         <Route path="/lookbook" element={<Lookbook />} />
         <Route path="/shop" element={<Shop/>} />
         <Route path="/contact" element={<Contact/>} />

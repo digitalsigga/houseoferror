@@ -1,7 +1,7 @@
 import { Image, CloudinaryContext } from 'cloudinary-react';
 import { useState } from 'react';
 
-function Editorial() {
+function WaningMoon() {
 
     const images = ['sol001', 'Una001'];
     // State to keep track of the current image index
@@ -37,6 +37,6 @@ function Editorial() {
     );
 }
 
-export default Editorial;
+export default WaningMoon;
 
 
